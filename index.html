@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#151d38">
+  <title>HubbuyCN spreadsheet | Guía de enlaces, tallas y QC</title>
+  <meta name="description" content="Guía en español de HubbuyCN spreadsheet. Explora calzado, ropa y accesorios, revisa enlaces de origen y fotos QC, y compara tallas y costes de envío.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="HubbuyCN spreadsheet | Guía de enlaces, tallas y QC">
+  <meta property="og:description" content="Cómo revisar enlaces de origen, comparar tallas y leer fotos QC antes de decidir qué pedir.">
+  <meta property="og:image" content="https://static.nike.com/a/images/w_768,c_limit,f_auto,q_auto/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR%2BFORCE%2B1%2B%2707.png">
+  <meta property="og:image:alt" content="Vista lateral de una zapatilla Nike Air Force 1 ’07 blanca">
+  <!-- Investigación editorial: Google no devolvió una primera página verificable. Se contrastaron diez sitios de la búsqueda web con la consulta exacta.
+       Directorios y búsqueda: www.hubbuycn.cc, hubbuy-cn.com, www.jadeship.com/search/spreadsheet/hubbuycn.
+       Enlaces antiguos y fichas de origen: spreadsheet-kakobuy.com, litbuysheetlinks.com.
+       QC, tallas y envío: hubbuycn.net, taofind.com, qcradar.com, hubbuycn.online, www.hubbuycnsheetu.com. -->
+  <style>
+    :root{color-scheme:light;--ink:#151d38;--muted:#464e66;--paper:#f8f7fc;--rule:#d7daea;--accent:#e9ff79;--purple:#382e84;--white:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.12;text-wrap:balance}
+    h1{font-size:clamp(2.35rem,7vw,5.45rem);letter-spacing:-.065em;overflow-wrap:anywhere}
+    h2{font-size:clamp(1.65rem,4vw,2.75rem);letter-spacing:-.04em}
+    h3{font-size:1.15rem}
+    a{color:inherit;text-underline-offset:.2em}
+    :focus-visible{outline:3px solid #7152e6;outline-offset:4px}
+    img{display:block;width:100%;height:auto}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    .mast{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.2rem 1rem;padding-block:.9rem;border-bottom:1px solid var(--rule)}
+    .brand{font-weight:850;text-decoration:none}
+    .label{font-size:.75rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+    .mast .label,.note{color:var(--muted)}
+    .directory{margin-block:1rem 1.25rem}
+    .directory ul{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.4rem;list-style:none;margin:.45rem 0 0;padding:0}
+    .directory a{display:flex;align-items:center;gap:.6rem;min-height:2.75rem;padding:.4rem .65rem;border:1px solid var(--rule);background:var(--white);font-size:.88rem;font-weight:730;text-decoration:none}
+    .directory a:hover{background:var(--accent);border-color:var(--ink)}
+    .directory span{color:var(--purple);font-size:.72rem;font-variant-numeric:tabular-nums}
+    .hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:1px;background:var(--ink);border:1px solid var(--ink)}
+    .intro{padding:clamp(1.3rem,5vw,3.4rem);align-self:center;color:var(--white)}
+    .intro .label{color:var(--accent);margin-bottom:.6rem}
+    .intro .lede{margin-top:1.15rem;max-width:44ch;color:#edefff}
+    .cta{display:inline-block;margin-top:1.3rem;padding:.65rem .9rem;background:var(--accent);color:var(--ink);font-weight:800;text-decoration:none}
+    .cta:hover{background:var(--white)}
+    .cta:focus-visible{outline-color:var(--white)}
+    .cover{display:grid;grid-template-rows:1fr auto;min-width:0;background:#ddd7fa}
+    .cover img{height:100%;min-height:0;max-height:23rem;object-fit:cover;align-self:center}
+    .cover figcaption{border-top:1px solid var(--ink);padding:.55rem .8rem;font-size:.82rem;font-weight:700}
+    .section{margin-block:clamp(2.25rem,6vw,4.6rem)}
+    .section .label{color:var(--purple);margin-bottom:.45rem}
+    .guides{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.8rem;margin-top:1.1rem}
+    .guides article{padding:1.1rem;border-top:4px solid var(--purple);background:var(--white)}
+    .guides p{margin-top:.65rem}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.75rem;margin-top:1rem}
+    .gallery figure{background:var(--white);border:1px solid var(--rule)}
+    .gallery img{aspect-ratio:1;object-fit:contain;background:#f5f3f8}
+    .gallery figcaption{padding:.55rem .65rem;font-size:.85rem;font-weight:700}
+    .note{font-size:.9rem;margin-top:.8rem}
+    .checks{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr);gap:1rem;padding:clamp(1.1rem,4vw,2.15rem);background:#ece8ff}
+    .checks ul{margin:0;padding-left:1.3rem}
+    .checks li+li{margin-top:.5rem}
+    .questions{margin-top:1rem;border-top:1px solid var(--rule)}
+    details{border-bottom:1px solid var(--rule);padding:.65rem 0}
+    summary{cursor:pointer;font-weight:750;padding:.25rem 0}
+    details p{max-width:70ch;padding:.4rem 0 .35rem 1.15rem}
+    footer{padding:1.15rem 0 1.8rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.9rem}
+    footer p+p{margin-top:.4rem}
+    @media(max-width:52rem){.directory ul{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:40rem){.hero,.guides,.checks{grid-template-columns:1fr}.cover img{height:auto;aspect-ratio:16/9}.directory ul,.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "#guia",
+        "inLanguage": "es",
+        "name": "HubbuyCN spreadsheet | Guía de enlaces, tallas y QC",
+        "description": "Guía en español de HubbuyCN spreadsheet. Explora calzado, ropa y accesorios, revisa enlaces de origen y fotos QC, y compara tallas y costes de envío.",
+        "hasPart": {"@id": "#preguntas"}
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "#preguntas",
+        "inLanguage": "es",
+        "mainEntity": [
+          {"@type":"Question","name":"¿Qué es un HubbuyCN spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Es una hoja que reúne referencias y enlaces de productos. Sirve para hacer una lista corta y comprobar cada ficha antes de tomar una decisión."}},
+          {"@type":"Question","name":"¿Qué hago si un enlace antiguo da error 404?","acceptedAnswer":{"@type":"Answer","text":"Busca la URL del anuncio original en la fila. Si el enlace del intermediario incluye un parámetro url, comprueba si contiene la dirección de origen. Verifica el dominio y la variante antes de usarla."}},
+          {"@type":"Question","name":"¿Qué muestran las fotos QC?","acceptedAnswer":{"@type":"Answer","text":"Muestran detalles visibles de la unidad fotografiada, como costuras, etiquetas, medidas y posibles daños. Pide un primer plano si falta un detalle y verifica la autenticidad por separado."}},
+          {"@type":"Question","name":"¿Cómo comparo tallas entre dos fichas?","acceptedAnswer":{"@type":"Answer","text":"Usa las medidas en centímetros de cada vendedor. En calzado, compara el largo de la plantilla. Para prendas, mide en plano una pieza que ya te quede bien."}},
+          {"@type":"Question","name":"¿Dónde abren los enlaces de esta guía?","acceptedAnswer":{"@type":"Answer","text":"Los botones de categorías abren el catálogo correspondiente de Hipobuyfind. El resto de los enlaces abre su página de inicio."}}
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/crwpx/">
+</head>
+<body>
+  <header class="wrap mast">
+    <a class="brand" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+    <span class="label">Guía independiente · ES</span>
+  </header>
+
+  <main class="wrap" id="guia">
+    <nav class="directory" aria-labelledby="categorias">
+      <p id="categorias" class="label">Explorar por categoría</p>
+      <ul>
+        <li><a href="https://hipobuyfind.com/category-911-Shoes.html"><span aria-hidden="true">01</span> Calzado</a></li>
+        <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html"><span aria-hidden="true">02</span> Sudaderas y jerséis</a></li>
+        <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html"><span aria-hidden="true">03</span> Camisetas</a></li>
+        <li><a href="https://hipobuyfind.com/category-914-Jackets.html"><span aria-hidden="true">04</span> Chaquetas</a></li>
+        <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html"><span aria-hidden="true">05</span> Pantalones y shorts</a></li>
+        <li><a href="https://hipobuyfind.com/category-916-Headwear.html"><span aria-hidden="true">06</span> Gorras y gorros</a></li>
+        <li><a href="https://hipobuyfind.com/category-917-Sets.html"><span aria-hidden="true">07</span> Conjuntos</a></li>
+        <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html"><span aria-hidden="true">08</span> Ropa interior</a></li>
+        <li><a href="https://hipobuyfind.com/category-919-Jersey.html"><span aria-hidden="true">09</span> Camisetas deportivas</a></li>
+        <li><a href="https://hipobuyfind.com/category-920-Accessories.html"><span aria-hidden="true">10</span> Accesorios</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero" aria-labelledby="titulo">
+      <div class="intro">
+        <p class="label">De la hoja a la ficha</p>
+        <h1 id="titulo">HubbuyCN spreadsheet</h1>
+        <p class="lede">Una guía para encontrar el enlace de origen, comparar la variante que te interesa y saber qué pedir en las fotos de control de calidad (QC). Empieza por una categoría y guarda solo las fichas que puedas comprobar.</p>
+        <a class="cta" href="https://www.hipobuyfind.com">Abrir Hipobuyfind <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="cover">
+        <img src="https://static.nike.com/a/images/w_768,c_limit,f_auto,q_auto/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR%2BFORCE%2B1%2B%2707.png"
+             srcset="https://static.nike.com/a/images/w_480,c_limit,f_auto,q_auto/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR%2BFORCE%2B1%2B%2707.png 480w, https://static.nike.com/a/images/w_768,c_limit,f_auto,q_auto/b7d9211c-26e7-431a-ac24-b0540fb3c00f/AIR%2BFORCE%2B1%2B%2707.png 768w"
+             sizes="(max-width:40rem) calc(100vw - 2rem), (max-width:74rem) 46vw, 34rem"
+             width="768" height="960" loading="eager" fetchpriority="high" alt="Vista lateral de una zapatilla Nike Air Force 1 ’07 blanca">
+        <figcaption>Referencia visual · Nike Air Force 1 ’07</figcaption>
+      </figure>
+    </section>
+
+    <section class="section" aria-labelledby="guias">
+      <p class="label">Tres lecturas breves</p>
+      <h2 id="guias">Cómo comparar antes de pedir</h2>
+      <div class="guides">
+        <article>
+          <h3>Enlaces de HubbuyCN y fichas de origen</h3>
+          <p>En una lista de <em>HubbuyCN finds</em>, guarda el enlace directo de Weidian, Taobao o 1688 junto al identificador del artículo y la fecha de consulta. Si encuentras un enlace caducado, busca la ficha original y comprueba que coincidan el vendedor, el color y la variante. Una foto similar puede corresponder a otro anuncio.</p>
+        </article>
+        <article>
+          <h3>Fotos QC y guía de tallas</h3>
+          <p>Para comparar zapatillas, pide una foto de la plantilla con una regla y otra de la suela. En una sudadera, compara ancho de pecho y largo de manga con una prenda que ya uses. Si revisas una chaqueta, solicita un primer plano de las costuras y el cierre. Usa la tabla de tallas del vendedor para la variante elegida.</p>
+        </article>
+        <article>
+          <h3>Del precio de la ficha al coste total</h3>
+          <p>Apunta la moneda, el envío nacional y las comisiones aplicables. Para comparar el envío internacional, pide el peso real y las dimensiones del paquete. Si la ruta cobra por peso volumétrico, usa esas medidas para cotizar. Revisa la estimación para tu país de destino y las condiciones de devolución antes de confirmar.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="referencias">
+      <p class="label">Referencias de diseño</p>
+      <h2 id="referencias">Ropa, gorras, bolsos y joyería</h2>
+      <div class="gallery">
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/733J603B0677C089_SBG_E01?%24r9x10_raw%24=&amp;crop=0%2C0%2C4000%2C5000&amp;hei=520&amp;wid=480" width="480" height="520" loading="lazy" decoding="async" alt="Camiseta blanca Dior con una abeja bordada en el pecho">
+          <figcaption>Dior · Camiseta con bordado de abeja</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Gorra Gucci de lona con estampado GG en tonos beige y marrón">
+          <figcaption>Gucci · Gorra de lona GG</figcaption>
+        </figure>
+        <figure>
+          <img src="https://uk.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-neverfull-mm-tote-bag--M46987_PM1_Back%20view.png?hei=480&amp;wid=480" width="480" height="480" loading="lazy" decoding="async" alt="Bolso Louis Vuitton Neverfull MM con estampado Monogram y asas claras">
+          <figcaption>Louis Vuitton · Neverfull MM</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/clic-hh-so-black-bracelet--703203FK01-front-wm-1-0-0-800-800_g.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Pulsera negra Hermès Clic HH So Black con cierre en forma de H">
+          <figcaption>Hermès · Pulsera Clic HH So Black</figcaption>
+        </figure>
+      </div>
+      <p class="note">Las fotografías ilustran modelos y detalles de diseño. La disponibilidad y la autenticidad se comprueban en la ficha correspondiente.</p>
+    </section>
+
+    <section class="section checks" aria-labelledby="control">
+      <div>
+        <p class="label">Lista de control</p>
+        <h2 id="control">Qué guardar de cada producto</h2>
+      </div>
+      <ul>
+        <li><strong>Calzado y ropa.</strong> Largo de plantilla, ancho de pecho, contorno de cintura o tiro del pantalón, según la categoría.</li>
+        <li><strong>Gorras, bolsos y pulseras.</strong> Contorno ajustable, medidas del bolso, fotos del interior o longitud útil de la pulsera.</li>
+        <li><strong>Conjuntos y camisetas deportivas.</strong> Talla de cada pieza, vista del reverso y detalle de los acabados.</li>
+        <li><strong>Enlaces y envío.</strong> Identificador, variante, moneda, peso del paquete, país de destino y fecha de la consulta.</li>
+      </ul>
+    </section>
+
+    <section class="section" id="preguntas" aria-labelledby="faq-titulo">
+      <p class="label">Respuestas directas</p>
+      <h2 id="faq-titulo">Preguntas frecuentes</h2>
+      <div class="questions">
+        <details open>
+          <summary>¿Qué es un HubbuyCN spreadsheet?</summary>
+          <p>Es una hoja que reúne referencias y enlaces de productos. Sirve para hacer una lista corta y comprobar cada ficha antes de tomar una decisión.</p>
+        </details>
+        <details>
+          <summary>¿Qué hago si un enlace antiguo da error 404?</summary>
+          <p>Busca la URL del anuncio original en la fila. Si el enlace del intermediario incluye un parámetro url, comprueba si contiene la dirección de origen. Verifica el dominio y la variante antes de usarla.</p>
+        </details>
+        <details>
+          <summary>¿Qué muestran las fotos QC?</summary>
+          <p>Muestran detalles visibles de la unidad fotografiada, como costuras, etiquetas, medidas y posibles daños. Pide un primer plano si falta un detalle y verifica la autenticidad por separado.</p>
+        </details>
+        <details>
+          <summary>¿Cómo comparo tallas entre dos fichas?</summary>
+          <p>Usa las medidas en centímetros de cada vendedor. En calzado, compara el largo de la plantilla. Para prendas, mide en plano una pieza que ya te quede bien.</p>
+        </details>
+        <details>
+          <summary>¿Dónde abren los enlaces de esta guía?</summary>
+          <p>Los botones de categorías abren el catálogo correspondiente de Hipobuyfind. El resto de los enlaces abre su página de inicio.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p>Guía editorial independiente de HubbuyCN y de las marcas mostradas.</p>
+    <p><a href="https://www.hipobuyfind.com">Visitar hipobuyfind.com</a></p>
+  </footer>
+</body>
+</html>
